@@ -2,6 +2,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: php
   author: Chase Reidinger
   description: Install PHP packages for Debian/Ubuntu
   company: "AdepDev, LLC"
