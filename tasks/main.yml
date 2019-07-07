@@ -2,7 +2,7 @@
 - name: Install php
   package:
     name: "{{ item }}"
-    # state: latest
+    state: present
   loop:
     - php
     - php-curl
