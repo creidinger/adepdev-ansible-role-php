@@ -1,8 +1,8 @@
 ---
 - name: Install php
-  apt:
+  package:
     name: "{{ item }}"
-    state: present
+    state: latest
   loop:
     - php
     - php-curl
@@ -15,6 +15,7 @@
     # resolve composer errors
     - php-bcmath
     - php-mbstring
+  ignore_errors: yes
 
 - name: enable php-mcrypt config
   shell: phpenmod mcrypt;
