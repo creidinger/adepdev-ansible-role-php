@@ -1,6 +1,6 @@
 ---
 - name: Install php
-  package:
+  apt:
     name: "{{ item }}"
     state: present
   loop:
